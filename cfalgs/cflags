@@ -1,0 +1,15 @@
+/home/mx/prog/c++/how to get cflags                   
+`pkg-config --cflags --libs libpulse`
+#might be too many flags
+
+export LD_LIBRARY_PATH=/path/to/my/library
+
+ /usr/bin/g++ -I/usr/lib/ (or other path)
+ /usr/bin/gcc -L/usr/lib/ (or pther path)
+
+using .so files
+
+example libpulse.so -> add cflag -lpulse
+                        #include <pulse> / <pulse/[...].h>
+
+
