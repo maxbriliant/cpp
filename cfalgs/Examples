@@ -1,0 +1,49 @@
+./config/sublime-text-3/Packages/User/
+// BUILD1
+{
+"cmd" : ["g++ -c *.cpp `pkg-config --cflags --libs gtkmm-3.0` \
+          && echo "Compiled all cpp files\n" \
+          && rm ./main.o \
+          && g++ main.cpp *.o *.h -o main `pkg-config --cflags --libs gtkmm-3.0` \
+          && echo "Linked all Files\n" \
+          && ./main"],
+
+
+"selector" : "source.c",
+"shell": true,
+"working_dir" : "$file_path"
+}
+
+//BUILD2
+{
+"cmd" : ["g++ -c *.cpp `pkg-config --cflags --libs gtkmm-3.0`  &&  rm ./main.o  &&  g++ main.cpp *.o *.h -o main `pkg-config --cflags --libs gtkmm-3.0`   &&   ./main"],
+"selector" : "source.c",
+"shell": true,
+"working_dir" : "$file_path"
+}
+
+
+
+compile each cpp file in directory:
+
+g++ -c *.cpp 
+
+to include a library:
+
+g++ -c *.cpp `pkg-config --cflags --libs gtkmm-3.0`
+//`pkg-config --cflags --libs gtkmm-3.0`
+//outout -I libraryname1 -I labraryname2 ...
+
+Linking:
+
+g++ main.cpp -o main examplewindow.h examplewindow.o `pkg-config --cflags --libs gtkmm-3.0`
+
+Run in terminal:
+
+./main 
+
+
+
+
+
+
