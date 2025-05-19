@@ -1,0 +1,18 @@
+Name: Max
+Geb.-Tag: 29
+Geb.-Monat 5
+Geb.-Jahr 1992
+Steuernummer: 12345678
+Einkommen Monat 1: 1700
+Einkommen Monat 2: 1750
+Einkommen Monat 3: 1700
+Einkommen Monat 4: 1750
+Einkommen Monat 5: 1800
+Einkommen Monat 6: 1800
+Einkommen Monat 7: 1900
+Einkommen Monat 8: 1900
+Einkommen Monat 9: 1900
+Einkommen Monat 10: 1900
+Einkommen Monat 11: 1900
+Einkommen Monat 12: 1900
+
