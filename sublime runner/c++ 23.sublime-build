@@ -1,0 +1,18 @@
+//{
+//    "cmd": [
+//        "bash", "-c",
+//        "g++ -std=c++23 '${file}' -o '${file_path}/${file_base}.out' && '${file_path}/${file_base}.out'"
+//    ],
+//    "file_regex": "^(..[^:]+):([0-9]+):?([0-9]+)?:? (.*)$",
+//    "working_dir": "${file_path}",
+//    "selector": "source.c++, source.c"
+//}
+{
+    "cmd": [
+        "bash", "-c",
+        "g++ -std=c++23 -I/home/mx/scripts/cpp/INCLUDE '${file}' -o '${file_path}/${file_base}.out' && '${file_path}/${file_base}.out'"
+    ],
+    "file_regex": "^(..[^:]+):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.c++, source.c"
+}
